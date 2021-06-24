@@ -22,9 +22,8 @@ body {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   color: hsl(0, 0%, 95%);
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  margin-bottom: 3rem;
 }
 
 .discription,
@@ -32,12 +31,11 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .discription {
-  line-height: 1.9;
-  margin-bottom: 4rem;
+  line-height: 1.6;
 }
 
 .card-wrapper {
@@ -47,15 +45,12 @@ body {
 }
 
 .cards {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-around;
   padding: 3.3rem;
-}
-
-.cards .svg {
-  margin-bottom: 3.3rem;
 }
 
 .cards .sedans-color path {
@@ -72,7 +67,7 @@ body {
 
 .sedans {
   background-color: var(--background-sedans);
-  border-radius: 0.5em 0.5em 0 0;
+  border-radius: 2.5em 2.5em 0 0;
 }
 
 .suvs {
@@ -81,7 +76,7 @@ body {
 
 .luxury {
   background-color: var(--background-luxury);
-  border-radius: 0 0 0.5em 0.5em;
+  border-radius: 0 0 2.5em 2.5em;
 }
 
 .btn {
@@ -125,16 +120,18 @@ body {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1024px) {
   .card-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 9rem;
+    margin: 15rem auto;
+    max-width: 1000px;
   }
   .cards {
-    height: 70vh;
-    width: 20vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .button.btn.btn-suvs {
