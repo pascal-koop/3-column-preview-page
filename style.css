@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+/* use custom properties to change the color design quicker if needed */
+:root {
+  --background-sedans: hsl(31, 77%, 52%);
+  --svg-sedans-color: hsl(42, 100%, 73%);
+  --background-suvs: hsl(184, 100%, 22%);
+  --svg-suvs-color: hsl(184, 67%, 45%);
+  --background-luxury: hsl(179, 100%, 13%);
+  --svg-luxury-color: hsl(170, 76%, 41%);
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.discription,
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+}
+
+.discription {
+  line-height: 1.9;
+  margin-bottom: 4rem;
+}
+
+.card-wrapper {
+  /* height: 100vh; */
+  border-radius: 0.4em;
+  margin: 4rem 2rem;
+}
+
+.cards {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3.3rem;
+}
+
+.cards .svg {
+  margin-bottom: 3.3rem;
+}
+
+.cards .sedans-color path {
+  fill: var(--svg-sedans-color);
+}
+
+.cards .suvs-color path {
+  fill: var(--svg-suvs-color);
+}
+
+.cards .luxury-color path {
+  fill: var(--svg-luxury-color);
+}
+
+.sedans {
+  background-color: var(--background-sedans);
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.suvs {
+  background-color: var(--background-suvs);
+}
+
+.luxury {
+  background-color: var(--background-luxury);
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 8458585px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.btn-sedans {
+  color: var(--background-sedans);
+}
+
+.btn-suvs {
+  color: var(--background-suvs);
+}
+
+.btn-luxury {
+  color: var(--background-luxury);
+}
+
+.btn-sedans:active {
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: var(--background-sedans);
+  transition: background 0.3s ease;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-suvs:active {
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: var(--background-suvs);
+  transition: background 0.3s ease;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-luxury:active {
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  background-color: var(--background-luxury);
+  transition: background 0.1s linear;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (min-width: 760px) {
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 9rem;
+  }
+  .cards {
+    height: 70vh;
+    width: 20vw;
+  }
+
+  .button.btn.btn-suvs {
+    margin-top: 2rem;
+  }
+  .sedans {
+    border-radius: 4.5em 0 0 4.5em;
+  }
+  .luxury {
+    border-radius: 0 4.5em 4.5em 0;
+  }
+
+  .btn {
+    margin-top: 5rem;
+  }
+}
