@@ -7,6 +7,10 @@
 
 body {
   background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 /* use custom properties to change the color design quicker if needed */
 :root {
@@ -39,7 +43,6 @@ body {
 }
 
 .card-wrapper {
-  /* height: 100vh; */
   border-radius: 0.4em;
   margin: 4rem 2rem;
 }
@@ -123,13 +126,10 @@ body {
 @media only screen and (min-width: 1024px) {
   .card-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 15rem auto;
-    max-width: 1000px;
   }
   .cards {
     height: 60vh;
+    max-width: 380px;
     display: flex;
     justify-content: space-evenly;
   }
