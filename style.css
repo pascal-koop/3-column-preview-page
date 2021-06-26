@@ -147,4 +147,28 @@ body {
   .btn {
     margin-top: 5rem;
   }
+
+  .btn-sedans:hover {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: var(--background-sedans);
+    transition: background 0.3s ease;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .btn-suvs:hover {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: var(--background-suvs);
+    transition: background 0.3s ease;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .btn-luxury:hover {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: var(--background-luxury);
+    transition: background 0.1s linear;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .svg {
+    height: 60px;
+  }
 }
